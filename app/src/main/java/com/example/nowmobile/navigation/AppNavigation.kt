@@ -1,6 +1,6 @@
 package com.example.nowmobile.navigation
 
-import ForgotPasswordScreen
+import com.example.nowmobile.features.forgotPassword.presentation.ForgotPasswordScreen
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -24,11 +24,11 @@ fun AppNavigation() {
                     }
                 },
                 onForgotPassword = {
-                    navController.navigate(Screen.Olvidepass.route)
+                    navController.navigate(Screen.ForgotPassword.route)
                 }
             )
         }
-        composable(Screen.Olvidepass.route) {
+        composable(Screen.ForgotPassword.route) {
             ForgotPasswordScreen(navController=navController)
         }
 

@@ -22,7 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import org.koin.androidx.compose.getViewModel
 import com.example.nowmobile.R
-import com.example.nowmobile.features.forgotPassword.presentation.ForgotPasswordViewModel
 
 @Composable
 fun ForgotPasswordScreen(
@@ -34,7 +33,7 @@ fun ForgotPasswordScreen(
 
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(id = R.drawable.forgotpass),
+            painter = painterResource(id = R.drawable.ic_launcher_background),
             contentDescription = "Fondo de recuperación de contraseña",
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
