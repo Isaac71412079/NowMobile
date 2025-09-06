@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">Now Mobile</string>
-    <string name="login_title">Login</string>
+    <string name="app_name">ucbtest</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="home_welcome_text">Bienvenido de nuevo %s!</string>
+    <string name="gitalias_input">Ingrese la cuenta de github</string>
+    <string name="gitalias_btn_find">Buscar</string>
     <string name="inicio_sesion">Iniciar Sesión</string>
 </resources>

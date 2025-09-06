@@ -13,13 +13,15 @@ import androidx.navigation.compose.rememberNavController
 import com.example.nowmobile.features.login.application.LoginScreen
 import androidx.compose.material3.Text
 import androidx.compose.ui.unit.dp
+import com.example.nowmobile.features.ejemplo.presentation.EjemploScreen
+
 @Composable
 fun AppNavigation() {
     val navController = rememberNavController()
 
     NavHost(
         navController = navController,
-        startDestination = Screen.Login.route
+        startDestination = Screen.Ejemplo.route
     ) {
         composable(Screen.Login.route) {
             LoginScreen(
@@ -35,6 +37,9 @@ fun AppNavigation() {
         }
         composable(Screen.ForgotPassword.route) {
             ForgotPasswordScreen(navController=navController)
+        }
+        composable (Screen.Ejemplo.route){
+            EjemploScreen()
         }
     }
 }
