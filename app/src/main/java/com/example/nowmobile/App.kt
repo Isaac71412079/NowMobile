@@ -1,7 +1,7 @@
 package com.example.nowmobile
 
 import android.app.Application
-import com.example.nowmobile.di.modules
+import com.example.nowmobile.di.appModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -13,7 +13,7 @@ class App : Application() {
         startKoin {
             androidLogger()
             androidContext(this@App)
-            modules(modules)
+            modules(appModules)
         }
     }
 }

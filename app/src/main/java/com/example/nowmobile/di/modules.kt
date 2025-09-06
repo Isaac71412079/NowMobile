@@ -12,10 +12,10 @@ import com.example.nowmobile.features.forgotPassword.presentation.ForgotPassword
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-val modules = module{
+val appModules = module{
 
     //repositorio
-    single<LoginRepository>{ LoginRepository() }
+    single<ILoginRepository>{ LoginRepository() }
     single<IForgotPasswordRepository>{ ForgotPasswordRepository() }
 
     //UseCase

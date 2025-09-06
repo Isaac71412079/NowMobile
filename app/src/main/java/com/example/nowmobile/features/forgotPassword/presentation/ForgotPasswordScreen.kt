@@ -32,12 +32,11 @@ fun ForgotPasswordScreen(
     val uiState by viewModel.uiState.collectAsState()
 
     Box(modifier = Modifier.fillMaxSize()) {
-        Image(
-            painter = painterResource(id = R.drawable.ic_launcher_background),
-            contentDescription = "Fondo de recuperación de contraseña",
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
-        )
+        //Image(
+        //    painter = painterResource(id = R.drawable.forgetPassword),
+        //    contentDescription = "Fondo de recuperación de contraseña",
+//            contentScale = ContentScale.Crop
+        //)
 
         Column(
             modifier = Modifier
