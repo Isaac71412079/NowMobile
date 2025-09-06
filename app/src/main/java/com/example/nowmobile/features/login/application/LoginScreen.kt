@@ -38,6 +38,8 @@ import androidx.compose.ui.unit.dp
 import org.koin.androidx.compose.koinViewModel
 import com.example.nowmobile.R
 import androidx.compose.foundation.layout.Row
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 
 import androidx.compose.ui.Alignment
 
@@ -81,6 +83,16 @@ fun LoginScreen(
                 label = { Text("Correo Electrónico") },
                 modifier = Modifier.fillMaxWidth()
             )
+
+            Card (
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceVariant
+                ),
+                modifier = Modifier
+                    .size(width=140.dp, height = 100.dp)
+            ) {
+                Text(text = "Card with Width and Height")
+            }
 
             Spacer(modifier = Modifier.height(16.dp))
 
